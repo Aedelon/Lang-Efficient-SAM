@@ -1,0 +1,8 @@
+gradio==4.18.0
+groundingdino-py==0.4.0
+matplotlib==3.8.2
+numpy==1.26.4
+opencv-python==4.9.0.80
+pillow==10.2.0
+torch==2.2.0
+torchvision==0.17.0
