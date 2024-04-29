@@ -1,8 +1,8 @@
 import cv2
 import matplotlib.pyplot as plt
 from PIL import Image
-from lang_efficient_sam import LangEfficientSAM
-from utils.draw_image import draw_image
+from lang_efficient_sam.lang_efficient_sam import LangEfficientSAM
+from lang_efficient_sam.utils.draw_image import draw_image
 
 
 def main():

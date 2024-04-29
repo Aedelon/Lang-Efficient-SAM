@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lang-efficient-sam"
+version = "1.0"
+
+authors = [
+    { name = "Delanoe Pirard", email = "delanoe.pirard.pro@gmail.com" }
+]
+
+dependencies = [
+    'torch',
+    'groundingdino-py',
+    'numpy',
+    'torchvision'
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.package-data]
+"models" = ["*.jit"]
