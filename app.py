@@ -5,8 +5,8 @@ import gradio as gr
 import numpy as np
 from PIL import Image
 
-from lang_efficient_sam.LangEfficientSAM import LangEfficientSAM
-from lang_efficient_sam.utils.draw_image import draw_image
+from lang_efficient_sam import LangEfficientSAM
+from utils.draw_image import draw_image
 
 warnings.filterwarnings("ignore")
 

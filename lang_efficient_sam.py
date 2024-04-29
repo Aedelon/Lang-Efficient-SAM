@@ -10,7 +10,6 @@ from torchvision.transforms import ToTensor
 from huggingface_hub import hf_hub_download
 import time
 
-
 def load_model_hugging_face(repo_id, filename, ckpt_config_filename, device='cpu'):
     cache_config_file = hf_hub_download(repo_id=repo_id, filename=ckpt_config_filename)
 
