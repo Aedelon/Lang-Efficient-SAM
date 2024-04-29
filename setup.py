@@ -10,7 +10,7 @@ setup(
     author="Delanoe Pirard",
     author_email="delanoe.pirard.pro@gmail.com",
 
-    py_modules=["lang_efficient_sam"],
+    py_modules=find_packages(),
 
     package_data={"models": ['./models/*.jit']},
     include_package_data=True,
