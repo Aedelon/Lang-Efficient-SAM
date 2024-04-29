@@ -12,6 +12,9 @@ setup(
 
     py_modules=find_packages(),
 
+    package_data={"": ['*.jit']},
+    include_package_data=True,
+
     install_requires=[
         'torch',
         'groundingdino-py',
