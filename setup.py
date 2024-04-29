@@ -12,7 +12,7 @@ setup(
 
     py_modules=find_packages(),
 
-    package_data={"models": ['./models/*.jit']},
+    package_data={"models": ['*.jit']},
     include_package_data=True,
 
     install_requires=[
