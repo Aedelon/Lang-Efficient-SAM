@@ -26,13 +26,13 @@ def load_model_hugging_face(repo_id, filename, ckpt_config_filename, device='cpu
 
 
 class LangEfficientSAM:
-    def __init__(self, device=torch.device("cuda" if torch.cuda.is_available() else "cpu")):
+    def __init__(self, path: str, device=torch.device("cuda" if torch.cuda.is_available() else "cpu")):
         self.device = device
         print("Device:", self.device)
         if self.device == "cpu":
-            self.sam_efficient = torch.jit.load('./models/efficientsam_s_cpu.jit')
+            self.sam_efficient = torch.jit.load(path + 'efficientsam_s_cpu.jit')
         else:
-            self.sam_efficient = torch.jit.load('./models/efficientsam_s_gpu.jit')
+            self.sam_efficient = torch.jit.load(path + 'efficientsam_s_gpu.jit')
         ckpt_repo_id = "ShilongLiu/GroundingDINO"
         ckpt_filename = "groundingdino_swinb_cogcoor.pth"
         ckpt_config_filename = "GroundingDINO_SwinB.cfg.py"
